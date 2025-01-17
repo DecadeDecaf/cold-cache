@@ -1,0 +1,59 @@
+function calc_winnings() {
+	var _worms = 0;
+	var _berries = 0;
+	var _caterpillars = 0;
+	var _eggs = 0;
+	var _sevens = 0;
+	
+	for (var _slot = 1; _slot < 4; _slot++) {
+		var _slot_val = 0;
+		switch (_slot) {
+			case 1:
+				_slot_val = slot_left; break;
+			case 2:
+				_slot_val = slot_middle; break;
+			case 3:
+				_slot_val = slot_right; break;
+			default:
+				break;
+		}
+		switch (_slot_val) {
+			case 1:
+				_worms++; break;
+			case 2:
+				_berries++; break;
+			case 3:
+				_caterpillars++; break;
+			case 4:
+				_eggs++; break;
+			case 5:
+				_sevens++; break;
+			default:
+				break;
+		}
+	}
+	
+	var _winning = 0;
+	if (_worms == 2) { _winning = 4; }
+	if (_berries == 2) { _winning = 8; }
+	if (_caterpillars == 2) { _winning = 12; }
+	if (_eggs == 2) { _winning = 16; }
+	if (_sevens == 2) { _winning = 20; }
+	if (_worms == 3) { _winning = 8; }
+	if (_berries == 3) { _winning = 16; }
+	if (_caterpillars == 3) { _winning = 24; }
+	if (_eggs == 3) { _winning = 32; }
+	if (_sevens == 3) { _winning = 50; }
+	
+	print(slot_left);
+	print(slot_middle);
+	print(slot_right);
+	
+	print("worms: " + string(_worms));
+	print("berries: " + string(_berries));
+	print("caterpillars: " + string(_caterpillars));
+	print("eggs: " + string(_eggs));
+	print("sevens: " + string(_sevens));
+	
+	return _winning;
+}
