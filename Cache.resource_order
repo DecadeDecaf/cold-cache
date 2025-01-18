@@ -47,6 +47,7 @@
     {"name":"spr_toll","order":13,"path":"sprites/spr_toll/spr_toll.yy",},
     {"name":"spr_nest_sparkle","order":14,"path":"sprites/spr_nest_sparkle/spr_nest_sparkle.yy",},
     {"name":"obj_fox","order":2,"path":"objects/obj_fox/obj_fox.yy",},
+    {"name":"obj_volumeslider","order":15,"path":"objects/obj_volumeslider/obj_volumeslider.yy",},
     {"name":"spr_snowflake","order":2,"path":"sprites/spr_snowflake/spr_snowflake.yy",},
     {"name":"spr_bush","order":19,"path":"sprites/spr_bush/spr_bush.yy",},
     {"name":"spr_slots_left","order":7,"path":"sprites/spr_slots_left/spr_slots_left.yy",},

@@ -70,6 +70,7 @@
     {"id":{"name":"spr_nest_sparkle","path":"sprites/spr_nest_sparkle/spr_nest_sparkle.yy",},},
     {"id":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},},
     {"id":{"name":"obj_fox","path":"objects/obj_fox/obj_fox.yy",},},
+    {"id":{"name":"obj_volumeslider","path":"objects/obj_volumeslider/obj_volumeslider.yy",},},
     {"id":{"name":"spr_snowflake","path":"sprites/spr_snowflake/spr_snowflake.yy",},},
     {"id":{"name":"spr_bush","path":"sprites/spr_bush/spr_bush.yy",},},
     {"id":{"name":"spr_slots_left","path":"sprites/spr_slots_left/spr_slots_left.yy",},},
