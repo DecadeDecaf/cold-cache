@@ -4,7 +4,7 @@ draw_set_font(fnt_font_small);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-var _str = string(berries) + " BERRIES";
+var _str = string(berries) + (berries == 1 ? " BERRY" : " BERRIES");
 
 var _y = (y - 208);
 var _dropshadow_dis = 1.5;

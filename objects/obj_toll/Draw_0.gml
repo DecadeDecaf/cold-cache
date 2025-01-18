@@ -6,7 +6,7 @@ draw_set_font(fnt_font_small);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-var _str = "PAY TOLL OF 50 FOOD TO PASS";
+var _str = "PAY TOLL OF " + string(g.tollprice) + " FOOD TO PASS";
 
 if (toll_cooldown > 0) {
 	_str = "";

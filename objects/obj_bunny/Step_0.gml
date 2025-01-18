@@ -15,16 +15,18 @@ var _fox = instance_nearest(x, y, obj_fox);
 with (_fox) {
 	if (point_distance(x, y, o.x, o.y) < 48) {
 		g.food += 30;
-		g.greentext = 10;
-		with (o) { splat(5, 24); }
+		g.greentext = 5;
+		audio_play_sound_at(snd_squash, -o.x, 800, 0, 1280, 640, 1, false, 1);
+		with (o) { splat(5, 32); }
 		instance_destroy(o);
 		exit;
-	} else if (point_distance(x, y, o.x, o.y) < 320 && !_jump && o.jump_cooldown == 0) {
+	} else if (point_distance(x, y, o.x, o.y) < 320 && !_jump && o.jump_cooldown <= 0) {
 		_jump = true;
 		o.image_index = 1;
 		o.yv = -8;
 		if (o.x > x) { o.image_xscale = 1; }
 		if (o.x < x) { o.image_xscale = -1; }
+		audio_play_sound_at(snd_boing, -o.x, 800, 0, 1280, 640, 1, false, 1);
 	}
 	if (_jump) {
 		if (o.image_xscale == -1) { _left = true; }

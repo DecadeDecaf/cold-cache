@@ -34,7 +34,6 @@
     {"name":"inst_3D6424C","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_4CEEA9DC","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_6A42A8F9","path":"rooms/rm_game/rm_game.yy",},
-    {"name":"inst_2B88916E","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_1350073A","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd": false,
@@ -68,7 +67,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D6424C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_nest","path":"objects/obj_nest/obj_nest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6624.0,"y":800.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CEEA9DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_nest","path":"objects/obj_nest/obj_nest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6368.0,"y":800.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A42A8F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_nest","path":"objects/obj_nest/obj_nest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6496.0,"y":800.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2B88916E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_slots","path":"objects/obj_slots/obj_slots.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5200.0,"y":784.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1350073A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6144.0,"y":784.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"assets","assets":[

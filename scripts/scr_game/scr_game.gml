@@ -1,6 +1,6 @@
 function double_or_nothing() {
-	if (image_index == 0) { g.food *= 2; g.greentext = 20; }
-	if (image_index == 6) { g.food = 0; g.redtext = 20; }
+	if (image_index == 0) { g.food *= 2; g.greentext = 10; audio_play_sound_at(snd_slots_win, -x, 800, 0, 1280, 640, 1, false, 1, 1, 0.25); }
+	if (image_index == 6) { g.food = 0; g.redtext = 10; audio_play_sound_at(snd_slots_lose, -x, 800, 0, 1280, 640, 1, false, 1, 1, 0.25); }
 }
 
 function calc_winnings() {

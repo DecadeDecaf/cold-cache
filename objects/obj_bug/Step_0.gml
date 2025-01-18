@@ -10,8 +10,9 @@ var _fox = instance_nearest(x, y, obj_fox);
 with (_fox) {
 	if (point_distance(x, y, o.x, o.y) < 32) {
 		g.food += 10;
-		g.greentext = 10;
-		with (o) { splat(3, 24); }
+		g.greentext = 5;
+		audio_play_sound_at(snd_squash, -o.x, 800, 0, 1280, 640, 1, false, 1);
+		with (o) { splat(3, 32); }
 		instance_destroy(o);
 		exit;
 	} else if (point_distance(x, y, o.x, o.y) < 256) {
