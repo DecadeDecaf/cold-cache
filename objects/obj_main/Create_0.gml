@@ -8,7 +8,7 @@ g.food = 0;
 g.greentext = 0;
 g.redtext = 0;
 
-g.tollprice = 1; //50;
+g.tollprice = 50;
 
 g.phase = 1;
 g.wind_pickup = 0;

@@ -5,8 +5,8 @@ if (instance_exists(obj_camera)) {
 	_mx -= (obj_camera.x - 960);
 }
 
-print(_mx);
-print(_my);
+// print(_mx);
+// print(_my);
 
 if ((_mx >= 1500 && _mx <= 1850 && _my >= 990 && _my <= 1010) || sliding) {
 	if (!sliding && mouse_check_button_pressed(mb_left)) {
