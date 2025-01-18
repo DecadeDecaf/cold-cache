@@ -31,6 +31,8 @@ with (_nest) {
 		g.food += (golden ? 20 : 2);
 		egg_cooldown = egg_cooldown_max;
 		golden = (random(100) < 1);
+		g.greentext = (golden ? 10 : 5);
+		splat(4, 56);
 	}
 }
 
@@ -43,6 +45,18 @@ with (_slots) {
 		slot_left = irandom_range(1, 5);
 		slot_middle = irandom_range(1, 5);
 		slot_right = irandom_range(1, 5);
+		g.redtext = 10;
+	}
+}
+
+var _coin = instance_nearest(x, y, obj_coin);
+
+with (_coin) {
+	if (point_distance(x, y, o.x, o.y) < 64 && coin_cooldown <= 0) {
+		coin_cooldown = coin_cooldown_max;
+		flips_left = choose(60, 66);
+		flip_speed = 2;
+		until_flip = flip_speed;
 	}
 }
 
@@ -53,6 +67,7 @@ with (_toll) {
 		if (g.food >= 50) {
 			g.food -= 50;
 			toll_cooldown = toll_cooldown_max;
+			g.redtext = 20;
 		} else {
 			o.x -= o.xv;
 			o.xv = 0;
@@ -67,5 +82,6 @@ with (_cache) {
 		win_condition -= g.food;
 		win_condition = max(0, win_condition)
 		g.food = 0;
+		g.redtext = 10;
 	}
 }

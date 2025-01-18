@@ -1,3 +1,6 @@
+if (g.greentext > 0) { g.greentext -= 0.25; }
+if (g.redtext > 0) { g.redtext -= 0.25; }
+
 if (g.gfc % 20 == 0) {
 	var _flake_x = random_range(0, 1920);
 	var _flake_y = random_range(-48, 240);
@@ -6,4 +9,20 @@ if (g.gfc % 20 == 0) {
 	}
 	var _depth = depth + 101;
 	instance_create_depth(_flake_x, _flake_y, _depth, obj_snowflake);
+}
+
+if (g.gfc % 200 == 0 && instance_number(obj_bug) < 2) {
+	var _padding = 192;
+	var _bug_x = random_range(_padding, room_width - _padding);
+	var _bug_y = 800;
+	var _depth = depth + 10;
+	instance_create_depth(_bug_x, _bug_y, _depth, obj_bug);
+}
+
+if (g.gfc % 200 == 0 && instance_number(obj_bunny) < 1) {
+	var _padding = 192;
+	var _bun_x = random_range(_padding, room_width - _padding);
+	var _bun_y = 800;
+	var _depth = depth + 10;
+	instance_create_depth(_bun_x, _bun_y, _depth, obj_bunny);
 }

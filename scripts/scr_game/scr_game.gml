@@ -1,3 +1,8 @@
+function double_or_nothing() {
+	if (image_index == 0) { g.food *= 2; g.greentext = 20; }
+	if (image_index == 6) { g.food = 0; g.redtext = 20; }
+}
+
 function calc_winnings() {
 	var _worms = 0;
 	var _berries = 0;
@@ -56,4 +61,12 @@ function calc_winnings() {
 	print("sevens: " + string(_sevens));
 	
 	return _winning;
+}
+
+function splat(_amt, _yoff) {
+	repeat (_amt) {
+		var _xrand = random_range(-6, 6);
+		var _yrand = random_range(-4, 4);
+		instance_create_depth(x + _xrand, y - _yoff + _yrand, depth - 1, obj_particle);
+	}
 }
