@@ -1,8 +1,12 @@
+if (g.game_over) {
+	exit
+}
+
 var _fox = instance_nearest(x, y, obj_fox);
 
 if (ofc % 15 == 0) {
 	with (_fox) {
-		if (point_distance(x, y, o.x, o.y) < 128) {
+		if (point_distance(x, y, o.x, o.y) < 128 && !dead) {
 			if (o.berries > 0) {
 				o.berries--;
 				g.food++;

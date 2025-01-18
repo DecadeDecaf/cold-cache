@@ -1,5 +1,30 @@
+if (g.game_over) {
+	exit
+}
+
+if (dead) {
+	if (dead_x > x + 12) {
+		x += 12;
+	} else if (dead_x < x - 12) {
+		x -= 12;
+	} else if (g.fade_out + g.fade_wait + g.fade_in <= 0) {
+		x = dead_x;
+		splat(5, 32);
+		dead = false;
+		if (g.phase == 2) {
+			instance_create_depth(6976, 368, depth, obj_cloud);
+		}
+	}
+	exit;
+}
+
 var _left = (keyboard_check(ord("A")) || keyboard_check(vk_left));
 var _right = (keyboard_check(ord("D")) || keyboard_check(vk_right));
+
+if (g.phase == 2 || g.phase == 4) {
+	_left = false;
+	_right = false;
+}
 
 var _hori = 0;
 
@@ -44,6 +69,7 @@ var _slots = instance_nearest(x, y, obj_slots);
 with (_slots) {
 	if (point_distance(x, y, o.x, o.y) < 64 && slot_cooldown <= 0 && g.food >= 10) {
 		g.food -= 10;
+		g.loss += 10;
 		slot_cooldown = slot_cooldown_max;
 		slot_left = irandom_range(1, 5);
 		slot_middle = irandom_range(1, 5);
@@ -88,11 +114,15 @@ with (_toll) {
 var _cache = instance_nearest(x, y, obj_cache);
 
 with (_cache) {
-	if (point_distance(x, y, o.x, o.y) < 64 && g.food > 0) {
+	if (point_distance(x, y, o.x, o.y) < 64 && g.food > 0 && g.phase == 1) {
 		win_condition -= g.food;
 		win_condition = max(0, win_condition)
 		g.food = 0;
 		g.redtext = 10;
 		audio_play_sound_at(snd_bury, -x, 800, 0, 1280, 640, 1, false, 1);
+		if (win_condition <= 0) {
+			g.phase = 2;
+			instance_create_depth(6976, 368, o.depth, obj_cloud);
+		}
 	}
 }

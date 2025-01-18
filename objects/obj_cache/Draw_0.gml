@@ -6,6 +6,10 @@ draw_set_valign(fa_middle);
 
 var _str = "STORE " + string(win_condition) + " MORE FOOD IN CACHE TO WIN";
 
+if (g.phase > 1) {
+	_str = "";
+}
+
 var _y = (y - 272);
 var _dropshadow_dis = 1.5;
 

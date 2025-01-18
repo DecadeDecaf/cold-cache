@@ -1,6 +1,6 @@
 function double_or_nothing() {
 	if (image_index == 0) { g.food *= 2; g.greentext = 10; audio_play_sound_at(snd_slots_win, -x, 800, 0, 1280, 640, 1, false, 1, 1, 0.25); }
-	if (image_index == 6) { g.food = 0; g.redtext = 10; audio_play_sound_at(snd_slots_lose, -x, 800, 0, 1280, 640, 1, false, 1, 1, 0.25); }
+	if (image_index == 6) { g.loss += g.food; g.food = 0; g.redtext = 10; audio_play_sound_at(snd_slots_lose, -x, 800, 0, 1280, 640, 1, false, 1, 1, 0.25); }
 }
 
 function calc_winnings() {
@@ -69,4 +69,18 @@ function splat(_amt, _yoff) {
 		var _yrand = random_range(-4, 4);
 		instance_create_depth(x + _xrand, y - _yoff + _yrand, depth - 1, obj_particle);
 	}
+}
+
+function time_string(_time) {
+	var _secs = floor(_time / 60);
+	var _mins = 0;
+	while (_secs >= 60) {
+		_mins++;
+		_secs -= 60;
+	}
+	var _sec_string = string(_secs);
+	if (string_length(_secs) == 1) {
+		_sec_string = "0" + _sec_string;
+	}
+	return string(_mins) + ":" + _sec_string;
 }

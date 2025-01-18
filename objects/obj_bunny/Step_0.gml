@@ -13,14 +13,14 @@ var _jump = (image_index == 1);
 var _fox = instance_nearest(x, y, obj_fox);
 
 with (_fox) {
-	if (point_distance(x, y, o.x, o.y) < 48) {
+	if (point_distance(x, y, o.x, o.y) < 48 && !dead) {
 		g.food += 30;
 		g.greentext = 5;
 		audio_play_sound_at(snd_squash, -o.x, 800, 0, 1280, 640, 1, false, 1);
 		with (o) { splat(5, 32); }
 		instance_destroy(o);
 		exit;
-	} else if (point_distance(x, y, o.x, o.y) < 320 && !_jump && o.jump_cooldown <= 0) {
+	} else if (point_distance(x, y, o.x, o.y) < 320 && !_jump && o.jump_cooldown <= 0 && !dead) {
 		_jump = true;
 		o.image_index = 1;
 		o.yv = -8;

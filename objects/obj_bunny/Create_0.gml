@@ -1,3 +1,7 @@
+if (g.game_over) {
+	exit
+}
+
 ofc = 0;
 
 image_alpha = 0;
