@@ -12,12 +12,12 @@
   "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"fonts","folderPath":"folders/fonts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"music","folderPath":"folders/music.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"objects","folderPath":"folders/objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"rooms","folderPath":"folders/rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"scripts","folderPath":"folders/scripts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sfx","folderPath":"folders/sfx.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprites","folderPath":"folders/sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"music","folderPath":"folders/music.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

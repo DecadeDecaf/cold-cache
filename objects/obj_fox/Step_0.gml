@@ -1,5 +1,5 @@
-var _left = keyboard_check(ord("A"));
-var _right = keyboard_check(ord("D"));
+var _left = (keyboard_check(ord("A")) || keyboard_check(vk_left));
+var _right = (keyboard_check(ord("D")) || keyboard_check(vk_right));
 
 var _hori = 0;
 

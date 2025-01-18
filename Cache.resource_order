@@ -1,12 +1,12 @@
 {
   "FolderOrderSettings": [
     {"name":"fonts","order":7,"path":"folders/fonts.yy",},
+    {"name":"music","order":11,"path":"folders/music.yy",},
     {"name":"objects","order":9,"path":"folders/objects.yy",},
     {"name":"rooms","order":10,"path":"folders/rooms.yy",},
     {"name":"scripts","order":5,"path":"folders/scripts.yy",},
     {"name":"sfx","order":3,"path":"folders/sfx.yy",},
     {"name":"sprites","order":1,"path":"folders/sprites.yy",},
-    {"name":"music","order":11,"path":"folders/music.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_sparkle","order":7,"path":"objects/obj_sparkle/obj_sparkle.yy",},
