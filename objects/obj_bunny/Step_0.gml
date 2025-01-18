@@ -27,7 +27,7 @@ with (_fox) {
 		if (o.x < x) { o.image_xscale = -1; }
 	}
 	if (_jump) {
-		if (o.image_xscale == -1) { _right = true; }
+		if (o.image_xscale == -1) { _left = true; }
 		if (o.image_xscale == 1) { _right = true; }
 	}
 }
