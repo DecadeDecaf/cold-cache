@@ -1,3 +1,5 @@
+handle_fullscreen();
+
 if (g.greentext > 0) { g.greentext -= 0.25; }
 if (g.redtext > 0) { g.redtext -= 0.25; }
 

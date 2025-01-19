@@ -31,6 +31,7 @@
     {"id":{"name":"spr_slots","path":"sprites/spr_slots/spr_slots.yy",},},
     {"id":{"name":"snd_toll","path":"sounds/snd_toll/snd_toll.yy",},},
     {"id":{"name":"spr_snowball","path":"sprites/spr_snowball/spr_snowball.yy",},},
+    {"id":{"name":"scr_main","path":"scripts/scr_main/scr_main.yy",},},
     {"id":{"name":"fnt_font","path":"fonts/fnt_font/fnt_font.yy",},},
     {"id":{"name":"scr_game","path":"scripts/scr_game/scr_game.yy",},},
     {"id":{"name":"mus_game","path":"sounds/mus_game/mus_game.yy",},},

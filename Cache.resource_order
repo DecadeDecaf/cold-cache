@@ -14,6 +14,7 @@
     {"name":"spr_slots","order":6,"path":"sprites/spr_slots/spr_slots.yy",},
     {"name":"snd_toll","order":8,"path":"sounds/snd_toll/snd_toll.yy",},
     {"name":"spr_snowball","order":22,"path":"sprites/spr_snowball/spr_snowball.yy",},
+    {"name":"scr_main","order":2,"path":"scripts/scr_main/scr_main.yy",},
     {"name":"obj_bush","order":13,"path":"objects/obj_bush/obj_bush.yy",},
     {"name":"snd_squash","order":6,"path":"sounds/snd_squash/snd_squash.yy",},
     {"name":"obj_bunny","order":12,"path":"objects/obj_bunny/obj_bunny.yy",},

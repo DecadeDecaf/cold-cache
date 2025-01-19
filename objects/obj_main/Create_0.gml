@@ -22,6 +22,14 @@ g.timer = 0;
 g.deaths = 0;
 g.loss = 0;
 
+g.desktop = (os_browser == browser_not_a_browser);
+
+window_set_size(1920, 1080);
+display_reset(8, true);
+
+exception_unhandled_handler(error);
+draw_set_circle_precision(64);
+
 g.vol = 0.75;
 audio_master_gain(g.vol);
 
