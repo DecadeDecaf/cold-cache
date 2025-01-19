@@ -123,6 +123,7 @@ with (_cache) {
 		if (win_condition <= 0) {
 			g.phase = 2;
 			instance_create_depth(6976, 368, o.depth, obj_cloud);
+			audio_sound_gain(mus_game, 0, 500);
 		}
 	}
 }

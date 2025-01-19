@@ -51,6 +51,7 @@
     {"name":"obj_snowflake","order":1,"path":"objects/obj_snowflake/obj_snowflake.yy",},
     {"name":"spr_toll","order":13,"path":"sprites/spr_toll/spr_toll.yy",},
     {"name":"spr_nest_sparkle","order":14,"path":"sprites/spr_nest_sparkle/spr_nest_sparkle.yy",},
+    {"name":"mus_boss","order":1,"path":"sounds/mus_boss/mus_boss.yy",},
     {"name":"obj_fox","order":2,"path":"objects/obj_fox/obj_fox.yy",},
     {"name":"snd_spit","order":11,"path":"sounds/snd_spit/snd_spit.yy",},
     {"name":"obj_volumeslider","order":15,"path":"objects/obj_volumeslider/obj_volumeslider.yy",},

@@ -5,6 +5,9 @@ if (spawn) {
 			g.phase = 3;
 			spawn = false;
 			anim_cooldown = 80;
+			if (!audio_is_playing(mus_boss)) {
+				audio_play_sound(mus_boss, 1, true, 0.75);
+			}
 		}
 	}
 	exit
@@ -18,8 +21,9 @@ if (dead) {
 	y += 0.5;
 	image_alpha -= 0.01;
 	if (image_alpha <= 0) {
-		instance_destroy();
 		g.fade_out = 40;
+		audio_sound_gain(mus_game, 0.5, 500);
+		instance_destroy();
 	}
 	exit
 }

@@ -53,6 +53,7 @@ with (_cloud) {
 			g.phase = 4;
 			with (obj_snowball) { splat(6, 0); }
 			instance_destroy(obj_snowball);
+			audio_sound_gain(mus_boss, 0, 500);
 		} else {
 			with (o) { splat(6, 0); }
 			instance_destroy(o);
