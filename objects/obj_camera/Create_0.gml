@@ -1,7 +1,7 @@
-x = 1920;
+x = 0;
 y = 1080;
 
-lookx = 1920;
+lookx = 0;
 looky = 1080;
 
 camera = camera_create();

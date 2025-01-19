@@ -44,7 +44,7 @@ if (g.phase == 4) {
 	_over_str += "\n\n";
 	_over_str += "THANK YOU SO MUCH FOR PLAYING!"
 	
-	draw_text_ext_transformed(150, 350, _over_str, 40, 960, 1, 1, 0);
+	draw_text_ext_transformed(150, 336, _over_str, 40, 900, 1, 1, 0);
 }
 
 draw_set_alpha(1);
