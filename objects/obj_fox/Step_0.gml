@@ -21,6 +21,21 @@ if (dead) {
 var _left = (keyboard_check(ord("A")) || keyboard_check(vk_left));
 var _right = (keyboard_check(ord("D")) || keyboard_check(vk_right));
 
+if (g.one_button) {
+	var _pressed = (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any))
+	var _pressing = (keyboard_check(vk_anykey) || mouse_check_button(mb_any))
+	if (_pressed) {
+		move_toggle *= -1;
+	}
+	if (_pressing) {
+		if (move_toggle < 0) { _left = true; }
+		if (move_toggle > 0) { _right = true; }
+	} else {
+		_left = false;
+		_right = false;
+	}
+}
+
 if (g.phase == 2 || g.phase == 4) {
 	_left = false;
 	_right = false;

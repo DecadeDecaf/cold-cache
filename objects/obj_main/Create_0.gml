@@ -23,6 +23,7 @@ g.deaths = 0;
 g.loss = 0;
 
 g.desktop = (os_browser == browser_not_a_browser);
+g.one_button = true;
 
 g.ref_dis = 1280;
 g.max_dis = 640;
