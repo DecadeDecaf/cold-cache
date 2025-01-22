@@ -76,4 +76,14 @@ if (g.greentext > 0) {
 	draw_text_transformed(200, 984, _str, 1, 1, 0);
 }
 
+if (!audio_is_playing(mus_game) && !g.desktop) {
+	draw_set_alpha(0.75);
+	draw_set_color(_black);
+	draw_rectangle(0, 0, 1920, 1080, false);
+	draw_set_alpha(1);
+	draw_set_color(_white);
+	draw_set_halign(fa_center);
+	draw_text_transformed(960, 320, "PLEASE CLICK INSIDE THE GAME WINDOW", 1, 1, 0);
+}
+
 draw_set_alpha(1);

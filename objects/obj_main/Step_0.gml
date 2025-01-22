@@ -1,5 +1,9 @@
 handle_fullscreen();
 
+if (!audio_is_playing(mus_game)) {
+	audio_play_sound(mus_game, 1, true, 0.75);
+}
+
 if (g.greentext > 0) { g.greentext -= 0.25; }
 if (g.redtext > 0) { g.redtext -= 0.25; }
 

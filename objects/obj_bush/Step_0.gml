@@ -12,7 +12,7 @@ if (ofc % 15 == 0) {
 				g.food++;
 				g.greentext = 5;
 				var _pitch = random_range(0.9, 1.1);
-				audio_play_sound_at(snd_berry, -o.x, 800, 0, 1280, 640, 1, false, 1, 0.8, 0, _pitch);
+				audio_play_sound_at(snd_berry, -o.x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1, 0.8, 0, _pitch);
 			}
 		} else {
 			if (ofc % 90 == 0) {

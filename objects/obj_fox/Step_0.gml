@@ -49,7 +49,7 @@ if (xv < -0.35) { image_xscale = -1; }
 var _padding = 96;
 x = clamp(x, _padding, room_width - _padding);
 
-audio_listener_position(-x, 800, 0);
+audio_listener_position(-x, 800, 640);
 
 var _nest = instance_nearest(x, y, obj_nest);
 
@@ -60,7 +60,7 @@ with (_nest) {
 		golden = (random(100) < 1);
 		g.greentext = 5;
 		splat(4, 56);
-		audio_play_sound_at(snd_pop, -x, 800, 0, 1280, 640, 1, false, 1);
+		audio_play_sound_at(snd_pop, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 	}
 }
 
@@ -75,7 +75,7 @@ with (_slots) {
 		slot_middle = irandom_range(1, 5);
 		slot_right = irandom_range(1, 5);
 		g.redtext = 10;
-		audio_play_sound_at(snd_slots, -x, 800, 0, 1280, 640, 1, false, 1);
+		audio_play_sound_at(snd_slots, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 	}
 }
 
@@ -87,7 +87,7 @@ with (_coin) {
 		flips_left = choose(60, 66);
 		flip_speed = 2;
 		until_flip = flip_speed;
-		audio_play_sound_at(snd_flip, -x, 800, 0, 1280, 640, 1, false, 1);
+		audio_play_sound_at(snd_flip, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 	}
 }
 
@@ -103,7 +103,7 @@ with (_toll) {
 			}
 			toll_cooldown = toll_cooldown_max;
 			g.redtext = 10;
-			audio_play_sound_at(snd_toll, -x, 800, 0, 1280, 640, 1, false, 1);
+			audio_play_sound_at(snd_toll, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 		} else {
 			o.x -= o.xv;
 			o.xv = 0;
@@ -119,7 +119,7 @@ with (_cache) {
 		win_condition = max(0, win_condition)
 		g.food = 0;
 		g.redtext = 10;
-		audio_play_sound_at(snd_bury, -x, 800, 0, 1280, 640, 1, false, 1);
+		audio_play_sound_at(snd_bury, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 		if (win_condition <= 0) {
 			g.phase = 2;
 			instance_create_depth(6976, 368, o.depth, obj_cloud);

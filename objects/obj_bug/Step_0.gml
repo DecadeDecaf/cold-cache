@@ -15,7 +15,7 @@ with (_fox) {
 	if (point_distance(x, y, o.x, o.y) < 32 && !dead) {
 		g.food += 10;
 		g.greentext = 5;
-		audio_play_sound_at(snd_squash, -o.x, 800, 0, 1280, 640, 1, false, 1);
+		audio_play_sound_at(snd_squash, -o.x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 		with (o) { splat(3, 32); }
 		instance_destroy(o);
 		exit;

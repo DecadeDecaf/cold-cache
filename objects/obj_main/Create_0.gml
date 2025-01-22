@@ -24,6 +24,9 @@ g.loss = 0;
 
 g.desktop = (os_browser == browser_not_a_browser);
 
+g.ref_dis = 1280;
+g.max_dis = 640;
+
 window_set_size(1920, 1080);
 display_reset(8, true);
 

@@ -7,9 +7,10 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
+    {"name":"inst_21A3B325","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_16C39D5E","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_762E8AE9","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_8E0A5E0","path":"rooms/rm_game/rm_game.yy",},
-    {"name":"inst_16C39D5E","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_22EFD41F","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_60430628","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_673C2150","path":"rooms/rm_game/rm_game.yy",},
@@ -36,7 +37,6 @@
     {"name":"inst_6A42A8F9","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_1350073A","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_3E86C411","path":"rooms/rm_game/rm_game.yy",},
-    {"name":"inst_21A3B325","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd": false,
   "layers": [

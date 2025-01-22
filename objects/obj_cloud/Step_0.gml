@@ -44,7 +44,7 @@ with (_fox) {
 					var _ball = instance_create_depth(o.x, o.y - 160, o.depth - 1, obj_snowball);
 					_ball.snow_xv = _ball_xv;
 				}
-				audio_play_sound_at(snd_spit, -o.x, 800, 0, 1280, 640, 1, false, 1);
+				audio_play_sound_at(snd_spit, -o.x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 			} else if (o.image_index == 3) {
 				o.image_index = 0;
 			} else if (o.image_index == 4) {

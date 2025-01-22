@@ -16,7 +16,7 @@ with (_fox) {
 			dead_x = 128;
 			g.phase = 1;
 		}
-		audio_play_sound_at(snd_snowball, -o.x, 800, 0, 1280, 640, 1, false, 1, 0.5);
+		audio_play_sound_at(snd_snowball, -o.x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1, 0.5);
 		with (o) { splat(6, 0); }
 		instance_destroy(o);
 		exit;
@@ -33,7 +33,7 @@ with (_coin) {
 		flip_speed = 2;
 		until_flip = flip_speed;
 		audio_stop_sound(snd_flip);
-		audio_play_sound_at(snd_flip, -x, 800, 0, 1280, 640, 1, false, 1);
+		audio_play_sound_at(snd_flip, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1);
 		o.snow_xv = 0;
 		o.snow_yv = -10;
 	}
@@ -47,7 +47,7 @@ with (_cloud) {
 		anim_cooldown = 40;
 		flash = 10;
 		hp--;
-		audio_play_sound_at(snd_snowball, -o.x, 800, 0, 1280, 640, 1, false, 1, 0.5);
+		audio_play_sound_at(snd_snowball, -o.x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1, 0.5);
 		if (hp <= 0) {
 			dead = true;
 			g.phase = 4;
@@ -68,7 +68,7 @@ if (ofc < 10) {
 	image_xscale += 0.025;
 	image_yscale += 0.025;
 } else if (y >= 760) {
-	audio_play_sound_at(snd_snowball, -x, 800, 0, 1280, 640, 1, false, 1, 0.5);
+	audio_play_sound_at(snd_snowball, -x, 800, 0, g.ref_dis, g.max_dis, 1, false, 1, 0.5);
 	splat(6, 0);
 	instance_destroy();
 }
