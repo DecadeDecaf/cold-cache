@@ -21,3 +21,17 @@ function set_fullscreen(full) {
 function error(struct) {
 	show_debug_message("ERROR: " + string(struct));
 }
+
+function gamepad_check() {
+	for (var _i = gp_face1; _i < gp_axisrv; _i++ ) {
+	    if (gamepad_button_check(0, _i)) { return _i; }
+	}
+	return false;
+}
+
+function gamepad_check_pressed() {
+	for (var _i = gp_face1; _i < gp_axisrv; _i++ ) {
+	    if (gamepad_button_check_pressed(0, _i)) { return _i; }
+	}
+	return false;
+}

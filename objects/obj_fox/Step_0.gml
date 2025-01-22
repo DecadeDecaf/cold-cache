@@ -18,12 +18,12 @@ if (dead) {
 	exit;
 }
 
-var _left = (keyboard_check(ord("A")) || keyboard_check(vk_left));
-var _right = (keyboard_check(ord("D")) || keyboard_check(vk_right));
+var _left = false;
+var _right = false;
 
 if (g.one_button) {
-	var _pressed = (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any))
-	var _pressing = (keyboard_check(vk_anykey) || mouse_check_button(mb_any))
+	var _pressed = (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any) || gamepad_check_pressed());
+	var _pressing = (keyboard_check(vk_anykey) || mouse_check_button(mb_any) || gamepad_check());
 	if (_pressed) {
 		move_toggle *= -1;
 	}
@@ -34,6 +34,9 @@ if (g.one_button) {
 		_left = false;
 		_right = false;
 	}
+} else {
+	_left = (keyboard_check(ord("A")) || keyboard_check(vk_left));
+	_right = (keyboard_check(ord("D")) || keyboard_check(vk_right));
 }
 
 if (g.phase == 2 || g.phase == 4) {
